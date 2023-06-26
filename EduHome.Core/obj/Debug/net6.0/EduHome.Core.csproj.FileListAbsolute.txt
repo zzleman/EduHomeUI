@@ -1,0 +1,12 @@
+/Users/leman/Projects/EduHomePr/EduHome.Core/bin/Debug/net6.0/EduHome.Core.deps.json
+/Users/leman/Projects/EduHomePr/EduHome.Core/bin/Debug/net6.0/EduHome.Core.dll
+/Users/leman/Projects/EduHomePr/EduHome.Core/bin/Debug/net6.0/EduHome.Core.pdb
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.csproj.AssemblyReference.cache
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.AssemblyInfoInputs.cache
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.AssemblyInfo.cs
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.csproj.CoreCompileInputs.cache
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.dll
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/refint/EduHome.Core.dll
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/EduHome.Core.pdb
+/Users/leman/Projects/EduHomePr/EduHome.Core/obj/Debug/net6.0/ref/EduHome.Core.dll

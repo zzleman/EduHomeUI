@@ -1,0 +1,15 @@
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/bin/Debug/net6.0/EduHome.DataAccess.deps.json
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/bin/Debug/net6.0/EduHome.DataAccess.dll
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/bin/Debug/net6.0/EduHome.DataAccess.pdb
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.csproj.AssemblyReference.cache
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.AssemblyInfoInputs.cache
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.AssemblyInfo.cs
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.csproj.CoreCompileInputs.cache
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.dll
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/refint/EduHome.DataAccess.dll
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.pdb
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/ref/EduHome.DataAccess.dll
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/bin/Debug/net6.0/EduHome.Core.dll
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/bin/Debug/net6.0/EduHome.Core.pdb
+/Users/leman/Projects/EduHomePr/EduHome.DataAccess/obj/Debug/net6.0/EduHome.DataAccess.csproj.CopyComplete
