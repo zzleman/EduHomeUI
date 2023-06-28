@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Slider>
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Slider</h4>
+
+                <div class="table-responsive">
+                    <table class="table table-dark mb-0">
+
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Second Title</th>
+                                <th>Description</th>
+                                <th>More</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var slider in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@count</th>
+                                    <td><img src="@slider.ImageBGPath" style="width:100px" /></td>
+                                    <td>@slider.Title</td>
+                                    <td>@slider.SecondTitle</td>
+                                    <td>@slider.Description</td>
+                                    <td>@slider.More</td>
+                                </tr>
+                                    count++;
+                                }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
