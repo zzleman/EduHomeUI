@@ -11,7 +11,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Slider</h4>
-
+                <a asp-action="Create" class="btn btn-primary mb-2">Create New Slider</a>
                 <div class="table-responsive">
                     <table class="table table-dark mb-0">
 
@@ -23,6 +23,7 @@
                                 <th>Second Title</th>
                                 <th>Description</th>
                                 <th>More</th>
+                                <th>Settings</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,6 +36,14 @@
                                     <td>@slider.SecondTitle</td>
                                     <td>@slider.Description</td>
                                     <td>@slider.More</td>
+                                    <td>
+                                        <a asp-action="Update" class="btn btn-warning">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-action="Delete" class="btn btn-danger">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
                                 </tr>
                                     count++;
                                 }
