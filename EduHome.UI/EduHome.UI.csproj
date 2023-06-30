@@ -23,6 +23,7 @@
     <None Remove="Areas\EduHomeAdmin\Views\Slider\" />
     <None Remove="Areas\EduHomeAdmin\ViewModels\" />
     <None Remove="Areas\EduHomeAdmin\ViewModels\SliderViewModels\" />
+    <None Remove="Mappers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -43,6 +44,7 @@
     <Folder Include="Areas\EduHomeAdmin\Views\Slider\" />
     <Folder Include="Areas\EduHomeAdmin\ViewModels\" />
     <Folder Include="Areas\EduHomeAdmin\ViewModels\SliderViewModels\" />
+    <Folder Include="Mappers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
@@ -54,6 +56,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EduHome.DataAccess\EduHome.DataAccess.csproj">

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sdtApdBTxN0SgTwj15jO2avL79rlYnPiKH+etV72KlfBN0Gi968o2NLIkqQ8J9Kvym9UKoKqa/4HSvMXLl2R1A==",
+  "dgSpecHash": "YT55fIXoVq9zUdatF2AT3PArriMiDQU1xDeqSSUauvTOHr7HoY0XkXkjwsvu56FS+Q9/Qj1fbefnK39OemGH+Q==",
   "success": true,
   "projectFilePath": "/Users/leman/Projects/EduHomePr/EduHome.UI/EduHome.UI.csproj",
   "expectedPackageFiles": [
+    "/Users/leman/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/leman/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/leman/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
-    "/Users/leman/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/leman/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/leman/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/leman/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/leman/.nuget/packages/microsoft.entityframeworkcore/6.0.19/microsoft.entityframeworkcore.6.0.19.nupkg.sha512",

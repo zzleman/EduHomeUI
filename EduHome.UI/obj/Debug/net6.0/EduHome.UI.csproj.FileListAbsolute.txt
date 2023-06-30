@@ -68,3 +68,5 @@
 /Users/leman/Projects/EduHomePr/EduHome.UI/bin/Debug/net6.0/EduHome.DataAccess.dll
 /Users/leman/Projects/EduHomePr/EduHome.UI/bin/Debug/net6.0/EduHome.DataAccess.pdb
 /Users/leman/Projects/EduHomePr/EduHome.UI/bin/Debug/net6.0/EduHome.Core.pdb
+/Users/leman/Projects/EduHomePr/EduHome.UI/bin/Debug/net6.0/AutoMapper.dll
+/Users/leman/Projects/EduHomePr/EduHome.UI/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
