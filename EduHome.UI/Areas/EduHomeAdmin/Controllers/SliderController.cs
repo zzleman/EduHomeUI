@@ -17,5 +17,9 @@ public class SliderController : Controller
     {
         return View(await _context.Sliders.ToListAsync());
     }
+
+    public IActionResult Create() {
+        return View();
+    }
 }
 

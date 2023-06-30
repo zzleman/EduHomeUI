@@ -1,44 +1,47 @@
 ﻿<Properties StartupConfiguration="{ED7D2557-938F-47B6-B6E7-8908B41053AB}|Default">
-  <DisabledProjects>
-    <String>EduHome.DataAccess/EduHome.DataAccess.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EduHome.UI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduHome.UI/Areas/EduHomeAdmin/Views/Shared/_AdminLayout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduHome.UI/Program.cs">
     <Files>
       <File FileName="EduHome.UI/Program.cs" Line="13" Column="1" />
-      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Controllers/DashboardController.cs" Line="5" Column="20" />
-      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Views/Shared/_AdminLayout.cshtml" Line="21" Column="49" />
+      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Views/Shared/_AdminLayout.cshtml" />
+      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Controllers/SliderController.cs" />
+      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Views/Slider/Index.cshtml" />
+      <File FileName="EduHome.UI/Areas/EduHomeAdmin/Views/_ViewImports.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduHomePr" expanded="True">
-            <Node name="EduHome.UI">
+            <Node name="EduHome.Core" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="EduHome.UI" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="EduHomeAdmin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
                   <Node name="Views" expanded="True">
-                    <Node name="Dashboard" expanded="True" />
-                    <Node name="Shared" expanded="True">
-                      <Node name="_AdminLayout.cshtml" selected="True" />
-                    </Node>
+                    <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>
               </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="wwwroot" expanded="True">
-                <Node name="admin" expanded="True" />
+                <Node name="admin" expanded="True">
+                  <Node name="assets" expanded="True" />
+                </Node>
               </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>EduHome.DataAccess/EduHome.DataAccess.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.EduHome.UI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
