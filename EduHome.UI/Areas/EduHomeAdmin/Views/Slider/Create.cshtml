@@ -1,4 +1,5 @@
-﻿@{
+﻿@model SliderPostVM
+@{
     ViewData["Title"] = "Create";
 }
 
@@ -8,33 +9,38 @@
 
         <form method="post">
             <div class="row mb-4">
-                <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Title</label>
+                <label asp-for="Title" class="col-sm-3 col-form-label">Title</label>
                 <div class="col-sm-9">
-                    <input type="text" name="Title" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                    <input asp-for="Title" class="form-control">
+                    <span class="text-danger" asp-validation-for="Title"></span>
                 </div>
             </div>
             <div class="row mb-4">
-                <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Second Title</label>
+                <label asp-for="SecondTitle" class="col-sm-3 col-form-label">Second Title</label>
                 <div class="col-sm-9">
-                    <input type="text" name="Second Title" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                    <input asp-for="SecondTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="SecondTitle"></span>
                 </div>
             </div>
             <div class="row mb-4">
-                <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Description</label>
+                <label asp-for="Description" class="col-sm-3 col-form-label">Description</label>
                 <div class="col-sm-9">
-                    <input type="text" name="Description" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                    <input asp-for="Description" class="form-control">
+                    <span class="text-danger" asp-validation-for="Description"></span>
                 </div>
             </div>
             <div class="row mb-4">
-                <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">More</label>
+                <label asp-for="More" class="col-sm-3 col-form-label">More</label>
                 <div class="col-sm-9">
-                    <input type="text" name="More" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                    <input asp-for="More" name="More" class="form-control">
+                    <span class="text-danger" asp-validation-for="More"></span>
                 </div>
             </div>
             <div class="row mb-4">
                 <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Image</label>
                 <div class="col-sm-9">
-                    <input type="text" name="ImageBGPath" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                    <input asp-for="ImageBGPath" class="form-control">
+                    <span class="text-danger" asp-validation-for="ImageBGPath"></span>
                 </div>
             </div>
 

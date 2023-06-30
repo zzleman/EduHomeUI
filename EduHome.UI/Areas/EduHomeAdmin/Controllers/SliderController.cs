@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EduHome.Core.Entities;
+using EduHome.UI.Areas.EduHomeAdmin.ViewModels.SliderViewModels;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace EduHome.UI.Areas.EduHomeAdmin.Controllers;
@@ -23,9 +25,34 @@ public class SliderController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(string Title, string SecondTitle, string Description, string More, string ImageBGPath)
+    public async Task<IActionResult> Create(SliderPostVM sliderPost) 
     {
-        return Content($"{Title} {SecondTitle} {Description} {More} {ImageBGPath}");
+        if (!ModelState.IsValid)
+        {
+            return View();
+        }
+        Slider slider = new()
+        {
+            Title = sliderPost.Title,
+            SecondTitle = sliderPost.SecondTitle,
+            Description = sliderPost.Description,
+            More = sliderPost.More,
+            ImageBGPath = sliderPost.ImageBGPath
+        };
+        await _context.Sliders.AddAsync(slider);
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
     }
+
+    public async Task<IActionResult> Delete(int Id)
+    {
+        Slider? sliderdb = await _context.Sliders.FindAsync(Id);
+        if (sliderdb == null)
+        {
+            return NotFound();
+        }
+        return View(sliderdb);
+    }
+
 }
 

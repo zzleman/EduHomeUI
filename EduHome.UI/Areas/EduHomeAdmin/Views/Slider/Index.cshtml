@@ -33,10 +33,10 @@
                                     <td>@slider.Description</td>
                                     <td>@slider.More</td>
                                     <td>
-                                        <a asp-action="Update" class="btn btn-warning">
+                                        <a asp-action="Update" asp-route-id="@slider.Id" class="btn btn-warning">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <a asp-action="Delete" class="btn btn-danger">
+                                        <a asp-action="Delete" asp-route-id="@slider.Id" class="btn btn-danger">
                                             <i class="fas fa-trash-alt"></i>
                                         </a>
                                     </td>

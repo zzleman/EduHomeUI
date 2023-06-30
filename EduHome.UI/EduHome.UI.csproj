@@ -17,11 +17,12 @@
     <None Remove="Areas\EduHomeAdmin\" />
     <None Remove="Areas\EduHomeAdmin\Controllers\" />
     <None Remove="Areas\EduHomeAdmin\Data\" />
-    <None Remove="Areas\EduHomeAdmin\Models\" />
     <None Remove="Areas\EduHomeAdmin\Views\" />
     <None Remove="Areas\EduHomeAdmin\Views\Shared\" />
     <None Remove="Areas\EduHomeAdmin\Views\Dashboard\" />
     <None Remove="Areas\EduHomeAdmin\Views\Slider\" />
+    <None Remove="Areas\EduHomeAdmin\ViewModels\" />
+    <None Remove="Areas\EduHomeAdmin\ViewModels\SliderViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -35,12 +36,13 @@
     <Folder Include="Areas\EduHomeAdmin\" />
     <Folder Include="Areas\EduHomeAdmin\Controllers\" />
     <Folder Include="Areas\EduHomeAdmin\Data\" />
-    <Folder Include="Areas\EduHomeAdmin\Models\" />
     <Folder Include="Areas\EduHomeAdmin\Views\" />
     <Folder Include="Areas\EduHomeAdmin\Views\Shared\" />
     <Folder Include="Areas\EduHomeAdmin\Views\Dashboard\" />
     <Folder Include="wwwroot\admin\" />
     <Folder Include="Areas\EduHomeAdmin\Views\Slider\" />
+    <Folder Include="Areas\EduHomeAdmin\ViewModels\" />
+    <Folder Include="Areas\EduHomeAdmin\ViewModels\SliderViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
