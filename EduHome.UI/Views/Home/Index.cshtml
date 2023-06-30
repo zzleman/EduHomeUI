@@ -43,7 +43,7 @@
             <div class="col-md-6">
                 <div class="notice-left">
                     <h3>Notice Board</h3>
-                    @foreach (var notice in Model.NoticeBoards.OrderBy(b => b.Date))
+                    @foreach (var notice in Model.NoticeBoards.OrderByDescending(d => d.Date))
                     {
                         <div class="single-notice-left  @(count % 3 == 0 ? " pb-75": "mb-25 pb-25")">
                             <h4>@notice.Date.ToString("dd MMMM, yyyy")</h4>
@@ -55,20 +55,13 @@
             </div>
             <div class="col-md-6">
                 <div class="notice-right">
-                    @*@foreach (var notice in Model.NoticeBoards.Select((value, index) => new { Value = value, Index = index }))
+                    @foreach (var noticeR in Model.NoticeBoards )
                     {
-                        <div class="@(notice.Index < 2 && !notice.Value.isLeft ? "single-notice-right mb-25 pb-25" : "single-notice-right")">
-                            @if (!notice.Value.isLeft)
-                            {
-                                <h3>@notice.Value.Title</h3>
-                                <p>@notice.Value.Description</p>
-                            }
+                        <div class="single-notice-right @(noticeR.Id==Model.NoticeBoards.ElementAt(2).Id ? "" : "mb-25 pb-25") ">
+                            <h3>@noticeR.Title</h3>
+                            <p>@noticeR.Description </p>
                         </div>
-                    }*@
-                    @*<div class="single-notice-right mb-25 pb-25">
-            <h3>PROFESSIONAL TEACHER</h3>
-            <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-        </div>*@
+                    }
                 </div>
             </div>
         </div>
