@@ -25,6 +25,7 @@ public class SliderController : Controller
     }
 
     [HttpPost]
+    [AutoValidateAntiforgeryToken]
     public async Task<IActionResult> Create(SliderPostVM sliderPost) 
     {
         if (!ModelState.IsValid)
@@ -52,6 +53,21 @@ public class SliderController : Controller
             return NotFound();
         }
         return View(sliderdb);
+    }
+
+    [HttpPost]
+    [ActionName("Delete")]
+    [AutoValidateAntiforgeryToken]
+    public async Task<IActionResult> DeletePost(int Id)
+    {
+        Slider? sliderdb = await _context.Sliders.FindAsync(Id);
+        if (sliderdb == null)
+        {
+            return NotFound();
+        }
+        _context.Sliders.Remove(sliderdb);
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
     }
 
 }
