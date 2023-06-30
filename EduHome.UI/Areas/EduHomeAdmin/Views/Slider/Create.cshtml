@@ -6,7 +6,7 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-title mb-4">Create Slider</h4>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="row mb-4">
                 <label asp-for="Title" class="col-sm-3 col-form-label">Title</label>
                 <div class="col-sm-9">
@@ -38,8 +38,8 @@
             <div class="row mb-4">
                 <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Image</label>
                 <div class="col-sm-9">
-                    <input asp-for="ImageBGPath" class="form-control">
-                    <span class="text-danger" asp-validation-for="ImageBGPath"></span>
+                    <input asp-for="ImageBG" class="form-control" accept="image/*">
+                    <span class="text-danger" asp-validation-for="ImageBG"></span>
                 </div>
             </div>
 
@@ -54,3 +54,7 @@
     </div>
     <!-- end card body -->
 </div>
+
+@section Script {
+    <partial name="_ValidationScript" />
+}
