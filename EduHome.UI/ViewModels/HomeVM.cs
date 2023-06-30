@@ -8,5 +8,6 @@ public class HomeVM
     public IEnumerable<Slider> Sliders { get; set; }
     public IEnumerable<NoticeBoard> NoticeBoards { get; set; }
     public IEnumerable<Choose> Chooses { get; set; }
+    public IEnumerable<Course>  Courses { get; set; }
 }
 
