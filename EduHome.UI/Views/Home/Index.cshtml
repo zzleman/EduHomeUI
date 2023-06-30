@@ -1,6 +1,7 @@
 ﻿@model HomeVM
 @{
     ViewData["Title"] = "Index";
+    var count = 1;
 }
 
 
@@ -8,27 +9,6 @@
 <section id="slider-container" class="slider-area">
     <div class="slider-owl owl-theme owl-carousel">
         <!-- Start Slingle Slide -->
-        <!--<div class="single-slide item" style="background-image: url(assets/img/slider/slider1.jpg)">-->
-        <!-- Start Slider Content -->
-        <!--<div class="slider-content-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-offset-left-5">
-                    <div class="slide-content-wrapper">
-                        <div class="slide-content">
-                            <h3>EDUCATION MAKES </h3>
-                            <h2>PROPER HUMANITY </h2>
-                            <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
-                            <a class="default-btn" href="about.html">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-        <!-- End Slider Content -->
-        <!--</div>-->
-        <!-- End Slingle Slide -->
         @foreach (var slider in Model.Sliders)
         {
             <div class="single-slide item" style="background-image: url(@slider.ImageBGPath)">
@@ -49,17 +29,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- Start Slider Content -->
             </div>
         }
-
-
-
-
-
-
     </div>
 </section>
+<!-- End Slingle Slide -->
+
 <!-- Background Area End -->
 <!-- Notice Start -->
 <section class="notice-area pt-150 pb-150">
@@ -67,59 +42,33 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="notice-left">
-                    <h3>notice board</h3>
-                    <div class="single-notice-left mb-25 pb-25">
-                        <h4>5, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left mb-25 pb-25">
-                        <h4>4, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left pb-75">
-                        <h4>3, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left mb-25 pb-25">
-                        <h4>5, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left mb-25 pb-25">
-                        <h4>4, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left pb-70">
-                        <h4>3, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left mb-25 pb-25">
-                        <h4>5, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left mb-25 pb-25">
-                        <h4>4, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
-                    <div class="single-notice-left pb-70">
-                        <h4>3, June 2023</h4>
-                        <p>I must explain to you how all this mistaken idea of denouncing plasure and praising pain was born and I will give you a complete </p>
-                    </div>
+                    <h3>Notice Board</h3>
+                    @foreach (var notice in Model.NoticeBoards.OrderBy(b => b.Date))
+                    {
+                        <div class="single-notice-left  @(count % 3 == 0 ? " pb-75": "mb-25 pb-25")">
+                            <h4>@notice.Date.ToString("dd MMMM, yyyy")</h4>
+                            <p>@notice.Info </p>
+                        </div>
+                        count++;
+                    }
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="notice-right">
-                    <div class="single-notice-right mb-25 pb-25">
-                        <h3>PROFESSIONAL TEACHER</h3>
-                        <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-                    </div>
-                    <div class="single-notice-right mb-25 pb-25">
-                        <h3>Online courses</h3>
-                        <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-                    </div>
-                    <div class="single-notice-right">
-                        <h3>easy to addmission</h3>
-                        <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-                    </div>
+                    @*@foreach (var notice in Model.NoticeBoards.Select((value, index) => new { Value = value, Index = index }))
+                    {
+                        <div class="@(notice.Index < 2 && !notice.Value.isLeft ? "single-notice-right mb-25 pb-25" : "single-notice-right")">
+                            @if (!notice.Value.isLeft)
+                            {
+                                <h3>@notice.Value.Title</h3>
+                                <p>@notice.Value.Description</p>
+                            }
+                        </div>
+                    }*@
+                    @*<div class="single-notice-right mb-25 pb-25">
+            <h3>PROFESSIONAL TEACHER</h3>
+            <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
+        </div>*@
                 </div>
             </div>
         </div>

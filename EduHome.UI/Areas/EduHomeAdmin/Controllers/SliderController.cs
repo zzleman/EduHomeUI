@@ -36,7 +36,14 @@ public class SliderController : Controller
         {
             return View();
         }
-        return Content(sliderPost.ImageBG.FileName);
+        if (!sliderPost.ImageBG.ContentType.Contains("image"))
+        {
+            ModelState.AddModelError("Image", "Select correct image format");
+            return View(sliderPost);
+        }
+        //sliderPost.ImageBG.ContentType.Contains("image")
+        //sliderPost.ImageBG.FileName
+        return Json(sliderPost.ImageBG.ContentType.Contains("image"));
         //Slider slider = _mapper.Map<Slider>(sliderPost);
         //await _context.Sliders.AddAsync(slider);
         //await _context.SaveChangesAsync();

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EduHome.UI.Areas.EduHomeAdmin.ViewModels.SliderViewModels;
 
@@ -14,7 +15,7 @@ public class SliderPostVM
 
     public string More { get; set; } = null!;
 
-    [Required]
+    [Required,NotMapped]
     public IFormFile ImageBG { get; set; } = null!;
 }
 

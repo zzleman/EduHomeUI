@@ -1,4 +1,5 @@
-﻿using EduHome.UI.ViewModels;
+﻿using EduHome.Core.Entities;
+using EduHome.UI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,7 +17,8 @@ public class HomeController : Controller
     {
         HomeVM homeVM = new()
         {
-            Sliders = await _context.Sliders.ToListAsync()
+            Sliders = await _context.Sliders.ToListAsync(),
+            NoticeBoards = await _context.NoticeBoards.ToListAsync()
         };
         return View(homeVM);
     }
