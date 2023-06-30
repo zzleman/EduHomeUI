@@ -18,7 +18,8 @@ public class HomeController : Controller
         HomeVM homeVM = new()
         {
             Sliders = await _context.Sliders.ToListAsync(),
-            NoticeBoards = await _context.NoticeBoards.ToListAsync()
+            NoticeBoards = await _context.NoticeBoards.ToListAsync(),
+            Chooses = await _context.Chooses.ToListAsync()
         };
         return View(homeVM);
     }
