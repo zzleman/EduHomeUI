@@ -23,13 +23,14 @@ public class SliderController : Controller
         return View(await _context.Sliders.ToListAsync());
     }
 
-    public IActionResult Create() {
+    public IActionResult Create()
+    {
         return View();
     }
 
     [HttpPost]
     [AutoValidateAntiforgeryToken]
-    public async Task<IActionResult> Create(SliderPostVM sliderPost) 
+    public async Task<IActionResult> Create(SliderPostVM sliderPost)
     {
         if (!ModelState.IsValid)
         {
@@ -76,5 +77,27 @@ public class SliderController : Controller
         }
         return View(sliderdb);
     }
-}
 
+    [HttpPost]
+    [AutoValidateAntiforgeryToken]
+    public async Task<IActionResult> Update(int Id, Slider slider)
+    {
+        if (Id != slider.Id)
+        {
+            return BadRequest();
+        }
+        if (!ModelState.IsValid)
+        {
+            return View(slider);
+        }
+        Slider? sliderDb = await _context.Sliders.AsNoTracking().FirstOrDefaultAsync(s => s.Id==Id );
+        if (sliderDb == null)
+        {
+            return NotFound();
+        }
+        _context.Entry<Slider>(slider).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+}
