@@ -21,5 +21,11 @@ public class SliderController : Controller
     public IActionResult Create() {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult Create(string Title, string SecondTitle, string Description, string More, string ImageBGPath)
+    {
+        return Content($"{Title} {SecondTitle} {Description} {More} {ImageBGPath}");
+    }
 }
 
