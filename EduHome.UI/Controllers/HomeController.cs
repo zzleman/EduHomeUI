@@ -22,7 +22,8 @@ public class HomeController : Controller
             Chooses = await _context.Chooses.ToListAsync(),
             Courses = await _context.Courses.ToListAsync(),
             Events = await _context.Events.ToListAsync(),
-            Blogs = await _context.Blogs.ToListAsync()
+            Blogs = await _context.Blogs.ToListAsync(),
+            Testimonials = await _context.Testimonials.ToListAsync()
 
         };
         return View(homeVM);

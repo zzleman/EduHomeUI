@@ -5,13 +5,14 @@ using EduHome.UI.Areas.EduHomeAdmin.ViewModels.BlogViewModels;
 
 namespace EduHome.UI.Mappers;
 
-public class BlogProfile : Profile
+public class TestimonialProfile : Profile
 {
-    public BlogProfile()
+    public TestimonialProfile()
     {
-        CreateMap<BlogPostVM, Blog>().ReverseMap();
+        CreateMap<TestimonialPostVM, Testimonial>().ReverseMap();
     }
 }
+
 
 
 
