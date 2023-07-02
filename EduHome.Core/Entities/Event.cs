@@ -13,13 +13,6 @@ public class Event : IEntity
     [DataType(DataType.Time)]
     public DateTime Date { get; set; }
 
-    public string Month { get; set; }
-
-    [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]
-    [DataType(DataType.Time)]
-    public DateTime Start { get; set; }
-
-
     [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]
     [DataType(DataType.Time)]
     public DateTime End { get; set; }

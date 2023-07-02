@@ -23,7 +23,7 @@
                                         <h3>@slider.Title </h3>
                                         <h2>@slider.SecondTitle </h2>
                                         <p>@slider.Description </p>
-                                        <a class="default-btn" href="about.html">@slider.More</a>
+                                        <a class="default-btn" href="about.html">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -141,13 +141,13 @@
                         <div class="col-lg-6 @(countE <=4 ? "pt-5 pt-lg-0":"pt-5 pt-lg-0")">
                             <div class="single-event mb-35 @(events.Id==Model.Events.ElementAt(3).Id ? "" : "mb-35")">
                                 <div class="event-date">
-                                    <h3><a href="event-details.html">@events.Date.Day <span>@events.Month</span></a></h3>
+                                    <h3><a href="event-details.html">@events.Date.Day <span>@events.Date.ToString("MMMM")</span></a></h3>
                                 </div>
                                 <div class="event-content text-start">
                                     <div class="event-content-left">
                                         <h4><a href="event-details.html">@events.Title</a></h4>
                                         <ul>
-                                            <li><i class="fa fa-clock-o"></i>@events.Start.Hour:@events.Start.Minute  AM - @events.End.Hour:@events.End.Minute PM</li>
+                                            <li><i class="fa fa-clock-o">@events.Date.ToString("h:00")AM - @events.End.ToString("h:mm")PM</i></li>
                                             <li><i class="fa fa-map-marker"></i>@events.Location</li>
                                         </ul>
                                     </div>

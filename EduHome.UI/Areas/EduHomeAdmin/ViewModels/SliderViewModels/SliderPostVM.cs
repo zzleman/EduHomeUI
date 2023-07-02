@@ -13,8 +13,6 @@ public class SliderPostVM
 
     public string Description { get; set; } = null!;
 
-    public string More { get; set; } = null!;
-
     [Required,NotMapped]
     public IFormFile ImageBG { get; set; } = null!;
 }

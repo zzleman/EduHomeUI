@@ -14,6 +14,5 @@ public class Slider:IEntity
 
     public string Description { get; set; } = null!;
 
-    public string More { get; set; } = null!;
 }
 
