@@ -26,6 +26,8 @@
     <None Remove="Mappers\" />
     <None Remove="Areas\EduHomeAdmin\Views\Course\" />
     <None Remove="Areas\EduHomeAdmin\ViewModels\CourseViewModels\" />
+    <None Remove="Areas\EduHomeAdmin\ViewModels\EventViewModels\" />
+    <None Remove="Areas\EduHomeAdmin\Views\Event\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -49,6 +51,8 @@
     <Folder Include="Mappers\" />
     <Folder Include="Areas\EduHomeAdmin\Views\Course\" />
     <Folder Include="Areas\EduHomeAdmin\ViewModels\CourseViewModels\" />
+    <Folder Include="Areas\EduHomeAdmin\ViewModels\EventViewModels\" />
+    <Folder Include="Areas\EduHomeAdmin\Views\Event\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
