@@ -24,6 +24,8 @@
     <None Remove="Areas\EduHomeAdmin\ViewModels\" />
     <None Remove="Areas\EduHomeAdmin\ViewModels\SliderViewModels\" />
     <None Remove="Mappers\" />
+    <None Remove="Areas\EduHomeAdmin\Views\Course\" />
+    <None Remove="Areas\EduHomeAdmin\ViewModels\CourseViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -45,6 +47,8 @@
     <Folder Include="Areas\EduHomeAdmin\ViewModels\" />
     <Folder Include="Areas\EduHomeAdmin\ViewModels\SliderViewModels\" />
     <Folder Include="Mappers\" />
+    <Folder Include="Areas\EduHomeAdmin\Views\Course\" />
+    <Folder Include="Areas\EduHomeAdmin\ViewModels\CourseViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

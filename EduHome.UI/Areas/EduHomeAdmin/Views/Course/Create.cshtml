@@ -1,0 +1,48 @@
+﻿@model CoursePostVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title mb-4">Create Course</h4>
+        <form method="post" enctype="multipart/form-data">
+            <div class="row mb-4">
+                <label asp-for="Title" class="col-sm-3 col-form-label">Title</label>
+                <div class="col-sm-9">
+                    <input asp-for="Title" class="form-control">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label asp-for="Description" class="col-sm-3 col-form-label">Description</label>
+                <div class="col-sm-9">
+                    <input asp-for="Description" class="form-control">
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+            </div>
+         
+            <div class="row mb-4">
+                <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Image</label>
+                <div class="col-sm-9">
+                    <input asp-for="ImagePath" class="form-control" accept="image/*">
+                    <span class="text-danger" asp-validation-for="ImagePath"></span>
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-sm-9">
+                    <div>
+                        <button type="submit" class="btn btn-primary w-md">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- end card body -->
+</div>
+
+@section Script {
+    <partial name="_ValidationScript" />
+}
