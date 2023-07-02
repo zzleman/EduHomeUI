@@ -14,5 +14,7 @@ public class AppDbContext : DbContext
     public DbSet<Event> Events { get; set; } = null!;
     public DbSet<Blog> Blogs { get; set; } = null!;
     public DbSet<Testimonial> Testimonials { get; set; } = null!;
+    public DbSet<About> Abouts { get; set; } = null!;
+    public DbSet<Teacher> Teachers { get; set; } = null!;
 }
 
