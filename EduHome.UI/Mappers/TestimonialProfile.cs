@@ -1,7 +1,7 @@
 ﻿
 using AutoMapper;
 using EduHome.Core.Entities;
-using EduHome.UI.Areas.EduHomeAdmin.ViewModels.BlogViewModels;
+using EduHome.UI.Areas.EduHomeAdmin.ViewModels.TestimonialViewModels;
 
 namespace EduHome.UI.Mappers;
 
