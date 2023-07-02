@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Blog>
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Blog</h4>
+        <a asp-action="Create" class="btn btn-primary mb-2">Create New Blog</a>
+        <div class="table-responsive">
+            <table class="table table-dark mb-0">
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Image</th>
+                        <th>Blogger</th>
+                        <th>Description</th>
+                        <th>Post Time</th>
+                        <th>Comments</th>
+                        <th>Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var blogs in Model)
+                    {
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td><img src="@blogs.ImagePath" style="width:100px" /></td>
+                            <td>@blogs.Blogger</td>
+                            <td>@blogs.Description</td>
+                            <td>@blogs.PostTime</td>
+                            <td>@blogs.Comments</td>
+                            <td>
+                                <a asp-action="Update" asp-route-id="@blogs.Id" class="btn btn-warning">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@blogs.Id" class="btn btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        count++;
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

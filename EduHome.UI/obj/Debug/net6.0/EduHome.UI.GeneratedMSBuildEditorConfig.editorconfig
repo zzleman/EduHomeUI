@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/leman/Projects/EduHomePr/EduHome.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/leman/Projects/EduHomePr/EduHome.UI/Areas/EduHomeAdmin/Views/Blog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRWR1SG9tZUFkbWluL1ZpZXdzL0Jsb2cvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leman/Projects/EduHomePr/EduHome.UI/Areas/EduHomeAdmin/Views/Blog/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRWR1SG9tZUFkbWluL1ZpZXdzL0Jsb2cvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leman/Projects/EduHomePr/EduHome.UI/Areas/EduHomeAdmin/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRWR1SG9tZUFkbWluL1ZpZXdzL0Jsb2cvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leman/Projects/EduHomePr/EduHome.UI/Areas/EduHomeAdmin/Views/Blog/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRWR1SG9tZUFkbWluL1ZpZXdzL0Jsb2cvVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/leman/Projects/EduHomePr/EduHome.UI/Areas/EduHomeAdmin/Views/Course/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRWR1SG9tZUFkbWluL1ZpZXdzL0NvdXJzZS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

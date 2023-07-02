@@ -1,0 +1,60 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title mb-4">Update Blog</h4>
+        <img src="@Model.ImagePath" width="150" />
+    <form method="post">
+        <div class="row mb-4">
+            <label asp-for="Blogger" class="col-sm-3 col-form-label">Blogger</label>
+            <div class="col-sm-9">
+                <input asp-for="Blogger" class="form-control">
+                <span class="text-danger" asp-validation-for="Blogger"></span>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <label asp-for="PostTime" class="col-sm-3 col-form-label">Post Time</label>
+            <div class="col-sm-9">
+                <input asp-for="PostTime" class="form-control">
+                <span class="text-danger" asp-validation-for="PostTime"></span>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <label asp-for="Comments" class="col-sm-3 col-form-label">Comments</label>
+            <div class="col-sm-9">
+                <input asp-for="Comments" class="form-control">
+                <span class="text-danger" asp-validation-for="Comments"></span>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <label asp-for="Description" class="col-sm-3 col-form-label">Description</label>
+            <div class="col-sm-9">
+                <input asp-for="Description" class="form-control">
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <label asp-for="ImagePath" class="col-sm-3 col-form-label">Image</label>
+            <div class="col-sm-9">
+                <input asp-for="ImagePath" class="form-control">
+                <span class="text-danger" asp-validation-for="ImagePath"></span>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-sm-9">
+                <div>
+                    <button type="submit" class="btn btn-primary w-md">Update</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <!-- end card body -->
+</div>
+
+@section Script {
+    <partial name="_ValidationScript" />
+}
