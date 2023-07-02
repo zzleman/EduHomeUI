@@ -20,7 +20,9 @@ public class HomeController : Controller
             Sliders = await _context.Sliders.ToListAsync(),
             NoticeBoards = await _context.NoticeBoards.ToListAsync(),
             Chooses = await _context.Chooses.ToListAsync(),
-            Courses = await _context.Courses.ToListAsync()
+            Courses = await _context.Courses.ToListAsync(),
+            Events = await _context.Events.ToListAsync()
+
         };
         return View(homeVM);
     }

@@ -11,5 +11,6 @@ public class AppDbContext : DbContext
     public DbSet<NoticeBoard> NoticeBoards { get; set; } = null!;
     public DbSet<Choose> Chooses { get; set; } = null!;
     public DbSet<Course> Courses { get; set; } = null!;
+    public DbSet<Event> Events { get; set; } = null!;
 }
 
