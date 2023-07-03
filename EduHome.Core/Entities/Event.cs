@@ -18,4 +18,6 @@ public class Event : IEntity
     public DateTime End { get; set; }
 
     public string Location { get; set; } = null!;
+
+    public EventDetail EventDetail { get; set; }
 }

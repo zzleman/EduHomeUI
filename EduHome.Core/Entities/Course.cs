@@ -12,4 +12,6 @@ public class Course : IEntity
     public string Description { get; set; } = null!;
 
     public string ImagePath { get; set; } = null!;
+
+    public CourseDetail CourseDetailId { get; set; }
 }

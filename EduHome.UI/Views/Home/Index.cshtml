@@ -23,7 +23,7 @@
                                         <h3>@slider.Title </h3>
                                         <h2>@slider.SecondTitle </h2>
                                         <p>@slider.Description </p>
-                                        <a class="default-btn" href="about.html">Learn More</a>
+                                        <a class="default-btn" href="about">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-6">
                 <div class="notice-right">
-                    @foreach (var noticeR in Model.NoticeBoards )
+                    @foreach (var noticeR in Model.NoticeRights )
                     {
                         <div class="single-notice-right @(noticeR.Id==Model.NoticeBoards.ElementAt(2).Id ? "" : "mb-25 pb-25") ">
                             <h3>@noticeR.Title</h3>
@@ -80,7 +80,7 @@
                         <h2>@choose.Title</h2>
                         <p>@choose.Description </p>
                         <p class="choose-option">@choose.AltTitle </p>
-                        <a class="default-btn" href="course-details.html">view courses</a>
+                        <a class="default-btn" href="CourseDetail">view courses</a>
                     }
                 </div>
             </div>
@@ -113,9 +113,9 @@
                             </a>
                         </div>
                         <div class="course-content">
-                            <h3><a href="course-details.html">@courses.Title</a></h3>
+                            <h3><a href="CourseDetail">@courses.Title</a></h3>
                             <p>@courses.Description</p>
-                            <a class="default-btn" href="course-details.html">read more</a>
+                            <a class="default-btn" href="CourseDetail">read more</a>
                         </div>
                     </div>
                 </div>

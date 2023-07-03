@@ -10,8 +10,5 @@ public class NoticeBoard : IEntity
     public DateTime Date { get; set; }
     [Required,MaxLength(300)]
     public string Info { get; set; } = null!;
-
-    public string? Title { get; set; }
-    public string? Description { get; set; }
 }
 

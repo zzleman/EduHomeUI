@@ -18,7 +18,9 @@ public class AboutController : Controller
         AboutVM aboutVM = new()
         {
             Abouts = await _context.Abouts.ToListAsync(),
-            Teachers = await _context.Teachers.ToListAsync()
+            Teachers = await _context.Teachers.ToListAsync(),
+            Testimonials = await _context.Testimonials.ToListAsync(),
+            NoticeBoards = await _context.NoticeBoards.ToListAsync()
 
         };
         return View(aboutVM);

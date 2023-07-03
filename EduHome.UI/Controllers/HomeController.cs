@@ -19,6 +19,7 @@ public class HomeController : Controller
         {
             Sliders = await _context.Sliders.ToListAsync(),
             NoticeBoards = await _context.NoticeBoards.ToListAsync(),
+            NoticeRights = await _context.NoticeRights.ToListAsync(),
             Chooses = await _context.Chooses.ToListAsync(),
             Courses = await _context.Courses.ToListAsync(),
             Events = await _context.Events.ToListAsync(),

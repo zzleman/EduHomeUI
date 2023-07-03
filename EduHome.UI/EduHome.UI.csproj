@@ -30,6 +30,7 @@
     <None Remove="Areas\EduHomeAdmin\Views\Event\" />
     <None Remove="Areas\EduHomeAdmin\Views\Blog\" />
     <None Remove="Views\About\" />
+    <None Remove="Views\CourseDetail\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -58,6 +59,7 @@
     <Folder Include="Areas\EduHomeAdmin\ViewModels\BlogViewModels\" />
     <Folder Include="Areas\EduHomeAdmin\Views\Blog\" />
     <Folder Include="Views\About\" />
+    <Folder Include="Views\CourseDetail\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
