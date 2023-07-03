@@ -19,5 +19,5 @@ public class Event : IEntity
 
     public string Location { get; set; } = null!;
 
-    public EventDetail EventDetail { get; set; }
+    public EventDetail EventDetailId { get; set; }
 }

@@ -16,4 +16,6 @@ public class Blog : IEntity
     public string Description { get; set; } = null!;
 
     public string ImagePath { get; set; } = null!;
+
+    public BlogDetail BlogDetailId { get; set; }
 }
